@@ -1,0 +1,71 @@
+@media only screen and (max-width:768px) {
+    #service-container{
+        margin-top: 10vh;
+        width: 100%;
+    }
+    #service-container .container{
+        width: 100%;
+        background-color: #f5f5f5;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #service-container .container .services{
+        display: flex;
+        flex-direction: column;
+    }
+    #service-container .container .services .service{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 5px;
+        border: 1px solid #aaa;
+        margin:20px 0;
+        background-color: rgba(200,200,200,.4);
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(200,200,200,.7);
+        transition: all .3s ease-in-out;
+        max-width: calc(100% - 5px);
+    }
+    #service-container .container .services .service:hover{
+        background-color: rgba(200,200,200,.8);
+        transform: scale(1.1);
+        box-shadow: 0px 0px 20px rgba(200,200,200,.5);
+    }
+    #service-container .container .services .service img{
+        width: 250px;
+        height: auto;
+        border-radius: 7px;
+        max-width: calc(100% - 20px);
+        transition: all .3s ease-in-out;
+    }
+    #service-container .container .services .service img:hover{
+        transform: scale(1.1);
+    }
+    #service-container .container .services .service h2{
+        font-size: 20px;
+        color: #2a40e6;
+        text-transform: uppercase;
+    }
+    #service-container .container .services .service #description{
+        font-size: 15px;
+        width: 250px;
+        max-width: calc(100% - 20px);
+    }
+    #service-container .container .services .service button{
+        margin: 10px auto;
+        padding: 7px;
+        border-radius: 3px;
+        border: none;
+        background-color: blue;
+        transition: all .3s ease-in-out;
+    }
+    #service-container .container .services .service button:hover{
+        background-color: coral;
+    }
+    #service-container .container .services .service button a{
+        color: white;
+        font-size: 14px;
+        text-decoration: none;
+    }
+}

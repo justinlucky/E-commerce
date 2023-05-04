@@ -1,0 +1,183 @@
+/* Navbar1 container */
+#navbar1-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+  
+  /* Logo */
+  .logo {
+    flex: 1;
+  }
+  
+  /* Name */
+  .name {
+    color: #000000;
+    font-size: 27px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .name span{
+    font-family: "Sofia" , "sans serif";
+    color: coral;
+  }
+  
+  /* Search items */
+  .search-items {
+    flex: 2;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Text search */
+  #text-search {
+    border: none;
+    border-bottom: 2px solid #000000;
+    font-size: 16px;
+    padding: 5px;
+    width: 100%;
+    transition: all .5s ease-in;
+  }
+
+  #text-search:hover{
+    font-size: 20px;
+  }
+  
+  /* Search button */
+  .search-button {
+    color: #000000;
+    font-size: 16px;
+    margin-left: 10px;
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+  }
+  
+  /* My account */
+  .my-account {
+    flex: 1;
+    text-align: center;
+  }
+  
+  /* User icons */
+  .user-icons {
+    color: #000000;
+    font-size: 29px;
+    margin-bottom: -15px;
+  }
+  
+  /* My cart */
+  .my-cart {
+    flex: 1;
+    text-align: center;
+  }
+  
+  /* Cart items */
+  .cart-items {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  
+  /* Shopping cart */
+  .shoping-cart {
+    color: #000000;
+    font-size: 28px;
+  }
+  
+  /* Setting */
+  .setting {
+    flex: 1;
+    text-align: right;
+    margin-right: 7px;
+  }
+  
+  /* Icon bars */
+  .icon-bars {
+    color: #000000;
+    font-size: 28px;
+    cursor: pointer;
+
+  }
+  
+  /* Media queries for mobile view */
+  @media only screen and (max-width: 768px) {
+    /* Navbar1 container */
+    #navbar1-container {
+      position: fixed;
+      top: 0;
+      flex-wrap: wrap;
+      box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    }
+  
+    /* Logo */
+    .logo {
+      flex-basis: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  
+    /* Name */
+    .name {
+      font-size: 20px;
+    }
+  
+    /* Search items */
+    .search-items {
+      flex-basis: 100%;
+    }
+  
+    /* Text search */
+    #text-search {
+      font-size: 14px;
+      border: none;
+    }
+    #text-search:hover{
+      font-size: 15px;
+      border-bottom: 1px solid coral;
+    }
+
+     /* Search button */
+  .search-button {
+    color: #fff;
+    height: 24px;
+    display: none;
+    width: 24px;
+    margin-left: 10px;
+    background-color: blue;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+    /* My account */
+    .my-account {
+      top:0;
+      position: absolute;
+      right: 0;
+      font-size: 10px;
+    }
+
+    .my-account .account-link{
+      text-decoration: none;
+      color: blue;
+      font-size: 12px;
+    }
+
+    .my-account .account-link:hover{
+      color: coral;
+      font-weight: bold;
+    }
+  
+    /* My cart */
+    .my-cart {
+      display: none;
+    }
+    .setting .icon-bars{
+        
+        font-size: 27px;
+    }
+  }
+  

@@ -1,0 +1,110 @@
+#login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .form-signin-mail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  .form-signin-mail h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .form-signin-mail label {
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-signin-mail input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 3px;
+    border: none;
+    width: 100%;
+  }
+  
+  .form-signin-mail button[type='button'],
+  .form-signin-mail button[type='submit'],
+  .signup-button {
+    background-color: #ffdb58;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  
+  .form-signin-mail button[type='submit'] {
+    background-color: #ffbf00;
+  }
+  
+  .signup-button {
+    background-color: #5cb85c;
+  }
+  
+  p {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    #login-container h1{
+      color:blue;
+    }
+    #login-container h1 span{
+      color: coral;
+      font-family: 'Sofia', 'sans-serif';
+    }
+    .form-signin-mail {
+      padding: 1rem;
+      width: 80%;
+    }
+    
+    .form-signin-mail h2 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .form-signin-mail button[type='button'],
+    .form-signin-mail button[type='submit'],
+    .signup-button {
+      font-size: 1.1rem;
+      padding: 0.5rem 0.8rem;
+    }
+
+    .back-to-home{
+      margin: 20px auto 0 auto;
+      height: 35px;
+      padding: 2px 4px;
+      width:80px ;
+      background-color: coral;
+      border: none;
+      border-radius: 5px;
+      transition: all .3s ease-in-out;
+      box-shadow: 0 0 20px rgba(200, 200, 200, 0.3);
+    }
+    .back-to-home:hover{
+      background-color: #ffbf00;
+    }
+    .back-to-home a{
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.2rem;
+    }
+  }

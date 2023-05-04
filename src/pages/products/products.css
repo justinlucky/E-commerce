@@ -1,0 +1,137 @@
+/* Products container */
+#products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10vh;
+}
+
+/* Product category container */
+.category-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Product category heading */
+.category-container h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Product grid */
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-direction: row;
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+
+/* Product item */
+.product-item {
+  width: calc(20% - 10px);
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Product item image */
+.product-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Product item name */
+.product-item h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Product item price */
+.product-item p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+/* View more button */
+.view-more-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Media queries */
+
+/* Desktop */
+@media (min-width: 769px) {
+  .product-grid {
+    flex-wrap: nowrap;
+  }
+
+  .product-item {
+    width: calc(20% - 10px);
+  }
+
+  .view-more-button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 24px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+  .products-grid {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-item {
+    width: calc(85% - 10px);
+  }
+
+  .view-more-button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+    box-shadow: 0 0 7px rgba(0,0,0,.3);
+  }
+
+  .view-more-button:hover{
+    background-color: coral;
+  }
+
+  .category-container h2{
+    text-align: start;
+  }
+}

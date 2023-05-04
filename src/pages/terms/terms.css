@@ -1,0 +1,24 @@
+#terms-container{
+    background-color: #ddd;
+    width: 100%;
+    height: 100%;
+    padding: 2px 1px;
+}
+#terms-container h2{
+    text-align: center;
+    font-size: 30px;
+}
+#terms-container p{
+    text-align: start;
+    font-size: 22px;
+}
+#terms-container p strong{
+    font-size: 24px;
+    color: #000;
+}
+@media only screen and (max-width:768px) {
+    #terms-container p{
+        word-break: break-all;
+        font-size: 18px;
+    }
+}

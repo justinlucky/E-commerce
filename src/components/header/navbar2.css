@@ -1,0 +1,83 @@
+#navbar2-container {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: #333;
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin-top: calc(70px-30px);
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+  }
+  
+  nav a:hover {
+    background-color: #666;
+  }
+  
+  /* Navbar2 - Mobile View */
+  @media only screen and (max-width: 768px) {
+    #navbar2-container {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.15);
+    }
+    #navbar2-container header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+    }
+    #navbar2-container ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0;
+    }
+    #navbar2-container li {
+      list-style: none;
+      padding: 0;
+    }
+    #navbar2-container a {
+      display: block;
+      text-align: center;
+      padding: 0.5rem 0;
+      font-size: .7rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #000;
+      text-decoration: none;
+      transition: all 0.5s ease-in-out;
+      border-top: #000 solid 1px;
+    }
+    #navbar2-container a:hover {
+      color: #FBC02D;
+      transition: all 0.5s ease-in-out;
+      background-color: #fff;
+      border-bottom: #000 solid 1px;
+      border-top: none;
+    }
+  }
+  
